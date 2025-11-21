@@ -176,16 +176,16 @@ export default function Home() {
               </ul>
             </div>
 
-            <NeumorfCard>
+            <div className="form-card p-8">
               {/* Más adelante aquí conectarás con /api/lead */}
-              <form className="space-y-4">
+              <form className="space-y-3">
                 <div>
                   <label className="block text-xs font-medium text-slate-600 mb-1">
                     Nombre
                   </label>
                   <input
                     type="text"
-                    className="w-full rounded-2xl px-3 py-2 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
+                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
                     placeholder="Cómo te llamas"
                   />
                 </div>
@@ -196,7 +196,7 @@ export default function Home() {
                   </label>
                   <input
                     type="email"
-                    className="w-full rounded-2xl px-3 py-2 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
+                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
                     placeholder="donde podamos escribirte"
                   />
                 </div>
@@ -207,7 +207,7 @@ export default function Home() {
                   </label>
                   <input
                     type="text"
-                    className="w-full rounded-2xl px-3 py-2 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
+                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
                     placeholder="restaurante, marca personal, estudio, etc."
                   />
                 </div>
@@ -218,7 +218,7 @@ export default function Home() {
                   </label>
                   <textarea
                     rows={3}
-                    className="w-full rounded-2xl px-3 py-2 text-sm bg-slate-100 outline-none resize-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
+                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none resize-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
                     placeholder="Cuéntame en pocas frases qué buscas."
                   />
                 </div>
@@ -227,7 +227,7 @@ export default function Home() {
                   Enviar proyecto a revisión
                 </NeumorfButton>
               </form>
-            </NeumorfCard>
+            </div>
           </div>
         </NeumorfSection>
 

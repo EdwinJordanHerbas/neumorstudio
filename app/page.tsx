@@ -1,10 +1,10 @@
 // src/app/page.tsx
-import { NeumorfSection } from "@/components/NeumorfSection";
-import { NeumorfCard } from "@/components/NeumorfCard";
-import { NeumorfButton } from "@/components/NeumorfButton";
-import { ThemeToggleWrapper } from "@/components/ThemeToggleWrapper";
-import { UniverseCard } from "@/components/UniverseCard";
-import { Hero3DVideo } from "@/components/Hero3DVideo";
+import { NeumorfSection } from "@/components/ui/NeumorfSection";
+import { NeumorfCard } from "@/components/ui/NeumorfCard";
+import { NeumorfButton } from "@/components/ui/NeumorfButton";
+import { ThemeToggleWrapper } from "@/components/theme/ThemeToggleWrapper";
+import { MovingDotCard } from "@/components/sections/MovingDotCard";
+import { Hero3DVideo } from "@/components/sections/Hero3DVideo";
 
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
               </h1>
               
               <ThemeToggleWrapper/>
-              <UniverseCard></UniverseCard>
+              <MovingDotCard></MovingDotCard>
 
               <p className="text-base md:text-lg text-slate-600 max-w-xl">
                 Diseñamos webs con estética <strong>neumórfica</strong>, capturamos

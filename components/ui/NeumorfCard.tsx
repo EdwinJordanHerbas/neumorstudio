@@ -1,6 +1,5 @@
 // components/NeumorfCard.tsx
 import { ReactNode } from "react";
-import "@/style/efectdark.css";
 
 interface NeumorfCardProps {
   children: ReactNode;

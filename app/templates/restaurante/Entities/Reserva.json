@@ -1,0 +1,54 @@
+{
+  "name": "Reserva",
+  "type": "object",
+  "properties": {
+    "nombre_cliente": {
+      "type": "string",
+      "description": "Nombre completo del cliente"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email del cliente"
+    },
+    "telefono": {
+      "type": "string",
+      "description": "Tel\u00e9fono de contacto"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de la reserva"
+    },
+    "hora": {
+      "type": "string",
+      "description": "Hora de la reserva"
+    },
+    "personas": {
+      "type": "number",
+      "description": "N\u00famero de personas"
+    },
+    "notas": {
+      "type": "string",
+      "description": "Notas especiales"
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "confirmada",
+        "completada",
+        "cancelada"
+      ],
+      "default": "pendiente"
+    }
+  },
+  "required": [
+    "nombre_cliente",
+    "email",
+    "telefono",
+    "fecha",
+    "hora",
+    "personas"
+  ]
+}

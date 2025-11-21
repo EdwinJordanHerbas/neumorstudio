@@ -1,7 +1,5 @@
-// src/components/UniverseCard.tsx
-import "@/style/universecard.css"
-
-export function UniverseCard() {
+// src/components/MovingDotCard.tsx
+export function MovingDotCard() {
   return (
     <div className="outer">
       <div className="dot" />

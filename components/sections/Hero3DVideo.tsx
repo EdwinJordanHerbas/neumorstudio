@@ -1,5 +1,4 @@
 // components/Hero3DVideo.tsx
-import "@/style/hero3d.css";
 
 export function Hero3DVideo() {
   return (

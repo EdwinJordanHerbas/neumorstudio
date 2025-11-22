@@ -10,6 +10,20 @@ export type LeadData = {
 }
 
 export async function crearLead(data: LeadData) {
+  // Verificar si el email ya existe
+  const { data: existingLead, error: checkError } = await supabase
+    .from('cliente_potencial')
+    .select('email')
+    .eq('email', data.email)
+
+  if (checkError) {
+    return { success: false, error: 'Error al verificar el email' }
+  }
+
+  if (existingLead && existingLead.length > 0) {
+    return { success: false, error: 'Este email ya está registrado' }
+  }
+
   const { error } = await supabase
     .from('cliente_potencial')
     .insert([
@@ -22,7 +36,6 @@ export async function crearLead(data: LeadData) {
     ])
 
   if (error) {
-    console.error('Error al guardar lead:', error)
     return { success: false, error: error.message }
   }
 

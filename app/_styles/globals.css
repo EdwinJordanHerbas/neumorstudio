@@ -3,7 +3,7 @@
 /* 👇 ESTA LÍNEA ES LA CLAVE EN TAILWIND V4  */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Importar todos los estilos neumórficos */
+/* Importar todos los estilos neumórficos tambien comer hamburguesa*/
 @import "./neumorph.css";
 
 body {

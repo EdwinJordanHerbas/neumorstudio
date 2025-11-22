@@ -5,6 +5,7 @@ import { NeumorfButton } from "@/components/ui/NeumorfButton";
 import { ThemeToggleWrapper } from "@/components/theme/ThemeToggleWrapper";
 import { MovingDotCard } from "@/components/sections/MovingDotCard";
 import { Hero3DVideo } from "@/components/sections/Hero3DVideo";
+import { ContactForm } from "@/components/forms/ContactForm";
 
 
 export default function Home() {
@@ -176,58 +177,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="form-card p-8">
-              {/* Más adelante aquí conectarás con /api/lead */}
-              <form className="space-y-3">
-                <div>
-                  <label className="block text-xs font-medium text-slate-600 mb-1">
-                    Nombre
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
-                    placeholder="Cómo te llamas"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-medium text-slate-600 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
-                    placeholder="donde podamos escribirte"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-medium text-slate-600 mb-1">
-                    Tipo de negocio
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
-                    placeholder="restaurante, marca personal, estudio, etc."
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-medium text-slate-600 mb-1">
-                    ¿Qué te gustaría conseguir con la web?
-                  </label>
-                  <textarea
-                    rows={3}
-                    className="w-full rounded-3xl px-4 py-2.5 text-sm bg-slate-100 outline-none resize-none shadow-[inset_4px_4px_10px_rgba(15,23,42,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.95)]"
-                    placeholder="Cuéntame en pocas frases qué buscas."
-                  />
-                </div>
-
-                <NeumorfButton type="submit" className="w-full justify-center">
-                  Enviar proyecto a revisión
-                </NeumorfButton>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </NeumorfSection>
 
